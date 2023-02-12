@@ -36,7 +36,18 @@ let firstCondition = "python".includes("on");
 let secondCondition = "dragon".includes("on");
 console.log(!(firstCondition === secondCondition));
 
-let date = new Date();
+const date = new Date();
 console.log(date.getFullYear());
 console.log(date.getMonth());
 console.log(date.getDate());
+console.log(date.getHours());
+console.log(date.getMinutes());
+
+// there are two way to solve the question no.7 part 7
+const oldDate = new Date("January 1, 1970");
+console.log(parseInt((date - oldDate) / 1000));
+
+var desiredDate = new Date();
+var unixTimestamp = Date.parse(desiredDate);
+var elapsedSeconds = unixTimestamp / 1000;
+console.log(elapsedSeconds);
