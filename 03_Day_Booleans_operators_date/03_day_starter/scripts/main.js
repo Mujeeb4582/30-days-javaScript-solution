@@ -105,13 +105,39 @@ let userAge = prompt("Enter number of years you live: ");
 console.log(`You lived ${userAge * 365 * 24 * 3600} seconds`);
 
 console.log(
-  `${date.getFullYear()}-${date.getMonth()}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}`
+  `${date.getFullYear()}-${
+    date.getMonth() + 1
+  }-${date.getDate()} ${date.getHours()}:${date.getMinutes()}`
 );
 
 console.log(
-  `${date.getDate()}-${date.getMonth()}-${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`
+  `${date.getDate()}-${
+    date.getMonth() + 1
+  }-${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`
 );
 
 console.log(
-  `${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`
+  `${date.getDate()}/${
+    date.getMonth() + 1
+  }/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`
 );
+
+// ================ level 3 ================
+
+const todayYear = date.getFullYear();
+const todayMonth = ("0" + (date.getMonth() + 1)).slice(-2);
+const todayDate = ("0" + date.getDate()).slice(-2);
+const todayHour = ("0" + date.getHours()).slice(-2);
+const todayMinute = ("0" + date.getMinutes()).slice(-2);
+const humanReadableTime =
+  todayYear +
+  "-" +
+  todayMonth +
+  "-" +
+  todayDate +
+  " " +
+  todayHour +
+  ":" +
+  todayMinute;
+
+console.log(humanReadableTime);
