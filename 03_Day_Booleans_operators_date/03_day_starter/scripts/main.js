@@ -51,3 +51,67 @@ var desiredDate = new Date();
 var unixTimestamp = Date.parse(desiredDate);
 var elapsedSeconds = unixTimestamp / 1000;
 console.log(elapsedSeconds);
+
+// ================ level 2 ================
+const base = prompt("Enter base: ");
+const height = prompt("Enter height: ");
+const area = 0.5 * base * height;
+console.log("The area of the triangle is ", area);
+
+const sideA = prompt("Enter side a: ");
+const sideB = prompt("Enter side b: ");
+const sideC = prompt("Enter side c: ");
+const perimeter = sideA + sideB + sideC;
+console.log("The perimeter of the triangle is ", perimeter);
+
+const length = prompt("Enter length: ");
+const breadth = prompt("Enter breadth: ");
+const areaOfRectangle = 2 * length * breadth;
+console.log("The area of the rectangle is ", areaOfRectangle);
+
+const radius = prompt("Enter radius: ");
+const circumference = 2 * Math.PI * radius;
+const areaOfCircle = Math.PI * radius * radius;
+console.log("The circumference of the circle is", circumference);
+console.log("The area of the circle is ", areaOfCircle);
+
+console.log("slope of y = 2x - 2 ", 2);
+console.log(
+  "slope between point(2, 2) and point(6, 10) is ",
+  (10 - 2) / (6 - 2)
+);
+
+console.log(2 === (10 - 2) / (6 - 2));
+
+const hrs = prompt("Enter hours: ");
+const rate = prompt("Enter rate per hours: ");
+console.log("Your weekly earning is ", hrs * rate);
+
+console.log(
+  "your name is long enough because length is",
+  firstName.length + lastName.length
+);
+
+console.log(
+  `Your first name, ${firstName} is short than your family name, ${lastName}`
+);
+
+let myAge = 30;
+let yourAge = 25;
+
+console.log(`I am ${30 - 25} years older than you.`);
+
+let userAge = prompt("Enter number of years you live: ");
+console.log(`You lived ${userAge * 365 * 24 * 3600} seconds`);
+
+console.log(
+  `${date.getFullYear()}-${date.getMonth()}-${date.getDate()} ${date.getHours()}:${date.getMinutes()}`
+);
+
+console.log(
+  `${date.getDate()}-${date.getMonth()}-${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`
+);
+
+console.log(
+  `${date.getDate()}/${date.getMonth()}/${date.getFullYear()} ${date.getHours()}:${date.getMinutes()}`
+);
